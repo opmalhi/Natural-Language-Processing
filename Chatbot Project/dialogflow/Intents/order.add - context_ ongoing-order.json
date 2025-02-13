@@ -1,0 +1,943 @@
+{
+  "id": "b50beddd-1fec-4ae0-9e3b-280a9743a026",
+  "name": "order.add - context: ongoing-order",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "ongoing-order"
+  ],
+  "contexts": [
+    "ongoing-order"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "ongoing-order",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "number",
+          "dataType": "@sys.number",
+          "isList": true,
+          "required": true,
+          "prompts": [
+            "Please make sure to mention the quantity for each food item (e.g., 'I would like 3 falafel and four hummus with pita')."
+          ],
+          "value": "$number",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "food-item",
+          "dataType": "@food-item",
+          "isList": true,
+          "required": true,
+          "prompts": [
+            "Please choose from the following menu items: Falafel, Hummus with Pita, Shawarma, Tabbouleh, Moussaka, Baklava, Greek Salad, Baba Ganoush, and Kebabs."
+          ],
+          "value": "$food-item",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Would you like to add anything else?",
+            "Is there anything else I can get for you?",
+            "Do you need anything else before I finalize your order?",
+            "Are you all set, or do you want to add more items?",
+            "Would you like to make any changes or add anything else?",
+            "Can I help you with anything else before we proceed?",
+            "Please let me know if you'd like to add anything else.",
+            "Should I go ahead and place the order now?",
+            "Everything looks great! Would you like to include anything else?"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Can I add another ",
+          "userDefined": false
+        },
+        {
+          "text": "Hummus with Pita",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": " to my order?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "7e1c07d9-e7ad-4c79-b1d9-3d9d31225ed0",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Please add an extra ",
+          "userDefined": false
+        },
+        {
+          "text": "Kebab",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": " for me",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "6453e921-0c6a-4e7c-b5e5-1d8033c87385",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Don't forget to add ",
+          "userDefined": false
+        },
+        {
+          "text": "one",
+          "userDefined": false,
+          "alias": "number",
+          "meta": "@sys.number"
+        },
+        {
+          "text": " more ",
+          "userDefined": false
+        },
+        {
+          "text": "Baklava",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        }
+      ],
+      "count": 0,
+      "id": "429f708a-feb0-463b-97bf-86efba9cc56e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I want to add a side of ",
+          "userDefined": false
+        },
+        {
+          "text": "Tabbouleh",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        }
+      ],
+      "count": 0,
+      "id": "5e067fe6-8723-45e7-97f0-c057051d9e87",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Can you add a ",
+          "userDefined": false
+        },
+        {
+          "text": "Moussaka",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": " to my order?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "764c65cc-3d17-4a6c-8296-eb1d765f1116",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I'd like to throw in ",
+          "userDefined": false
+        },
+        {
+          "text": "one",
+          "userDefined": false,
+          "alias": "number",
+          "meta": "@sys.number"
+        },
+        {
+          "text": " more ",
+          "userDefined": false
+        },
+        {
+          "text": "Greek Salad",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        }
+      ],
+      "count": 0,
+      "id": "ce44cdee-5208-466e-ba83-bcd249f53676",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I think I forgot to add a ",
+          "userDefined": false
+        },
+        {
+          "text": "Shawarma",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": "!",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ce610482-53a0-4e2a-bb03-71d89f9d2844",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Can you add a ",
+          "userDefined": false
+        },
+        {
+          "text": "Baklava",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": " to my order, please?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "2796619e-a1cf-4c69-9e45-d05848de4219",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Add ",
+          "userDefined": false
+        },
+        {
+          "text": "one",
+          "userDefined": false,
+          "alias": "number",
+          "meta": "@sys.number"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "Tabbouleh",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": " to the order, please",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e52a3af4-e79f-4a4d-91d2-2065d6179153",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Make that ",
+          "userDefined": false
+        },
+        {
+          "text": "two",
+          "userDefined": false,
+          "alias": "number",
+          "meta": "@sys.number"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "Kebabs",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": " instead of ",
+          "userDefined": false
+        },
+        {
+          "text": "one",
+          "userDefined": false,
+          "alias": "number",
+          "meta": "@sys.number"
+        }
+      ],
+      "count": 0,
+      "id": "389ae5c7-5911-40c8-9584-5a588c8d40bb",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I want to add another ",
+          "userDefined": false
+        },
+        {
+          "text": "Falafel",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": ", please",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ea12d407-23e2-4266-94d7-4e000dd93d34",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Add ",
+          "userDefined": false
+        },
+        {
+          "text": "one",
+          "userDefined": false,
+          "alias": "number",
+          "meta": "@sys.number"
+        },
+        {
+          "text": " more ",
+          "userDefined": false
+        },
+        {
+          "text": "Shawarma",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": " to the order",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d9db1e58-b292-4d61-a688-7497d2abc790",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Please add ",
+          "userDefined": false
+        },
+        {
+          "text": "two",
+          "userDefined": false,
+          "alias": "number",
+          "meta": "@sys.number"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "Baba Ganoush",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": " and ",
+          "userDefined": false
+        },
+        {
+          "text": "one",
+          "userDefined": false,
+          "alias": "number",
+          "meta": "@sys.number"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "Pita with Hummus",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        }
+      ],
+      "count": 0,
+      "id": "de1b67c5-f6e8-48a3-9db3-7aaf32dd12e9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I'd like to add ",
+          "userDefined": false
+        },
+        {
+          "text": "one",
+          "userDefined": false,
+          "alias": "number",
+          "meta": "@sys.number"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "Shawarma",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": " and ",
+          "userDefined": false
+        },
+        {
+          "text": "two",
+          "userDefined": false,
+          "alias": "number",
+          "meta": "@sys.number"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "Greek Salads",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        }
+      ],
+      "count": 0,
+      "id": "91496152-565d-45f8-b87c-4a00b5647c9c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Can you add ",
+          "userDefined": false
+        },
+        {
+          "text": "three",
+          "userDefined": false,
+          "alias": "number",
+          "meta": "@sys.number"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "Falafels",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": " and a ",
+          "userDefined": false
+        },
+        {
+          "text": "Baklava",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b16c9a95-cb96-4832-8929-98f1b5a954aa",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Add a ",
+          "userDefined": false
+        },
+        {
+          "text": "Moussaka",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": ", ",
+          "userDefined": false
+        },
+        {
+          "text": "Greek Salad",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": ", and ",
+          "userDefined": false
+        },
+        {
+          "text": "one",
+          "userDefined": false,
+          "alias": "number",
+          "meta": "@sys.number"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "Kebab",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": " to my order",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "77e0f170-80f4-4493-9aa8-cb2dc2c6706f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Add ",
+          "userDefined": false
+        },
+        {
+          "text": "two",
+          "userDefined": false,
+          "alias": "number",
+          "meta": "@sys.number"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "Shawarmas",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": " and ",
+          "userDefined": false
+        },
+        {
+          "text": "one",
+          "userDefined": false,
+          "alias": "number",
+          "meta": "@sys.number"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "Baklava",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        }
+      ],
+      "count": 0,
+      "id": "8f4e48fd-4ac3-4a01-be3f-473d81d16dad",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I want to add a ",
+          "userDefined": false
+        },
+        {
+          "text": "Baba Ganoush",
+          "userDefined": true,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": " and a ",
+          "userDefined": false
+        },
+        {
+          "text": "Kebab",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        }
+      ],
+      "count": 0,
+      "id": "c4ccef5a-73cd-4ad3-8e8b-8b4a5ccfd992",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Please add ",
+          "userDefined": false
+        },
+        {
+          "text": "two",
+          "userDefined": false,
+          "alias": "number",
+          "meta": "@sys.number"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "Hummus with Pita",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        }
+      ],
+      "count": 0,
+      "id": "e2fed6a7-05a3-435e-9908-cadf34ddad6c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I'd like to add ",
+          "userDefined": false
+        },
+        {
+          "text": "one",
+          "userDefined": false,
+          "alias": "number",
+          "meta": "@sys.number"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "Moussaka",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        }
+      ],
+      "count": 0,
+      "id": "c2d5dc89-029d-485f-8fed-66ec6a1ce4e5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Add a ",
+          "userDefined": false
+        },
+        {
+          "text": "Greek Salad",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": " to my order, please",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "0b46885a-2d2c-4b8a-8868-53134b98f573",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Can I add ",
+          "userDefined": false
+        },
+        {
+          "text": "one",
+          "userDefined": false,
+          "alias": "number",
+          "meta": "@sys.number"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "Baklava",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": " to my order?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "afb62856-5fc7-4cd4-887b-bc4bc20fdb49",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I want to add a ",
+          "userDefined": false
+        },
+        {
+          "text": "Falafel",
+          "userDefined": true,
+          "alias": "food-item",
+          "meta": "@food-item"
+        }
+      ],
+      "count": 0,
+      "id": "44eb21d9-5a80-4887-aa03-50f618b431b2",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Add ",
+          "userDefined": false
+        },
+        {
+          "text": "two",
+          "userDefined": true,
+          "alias": "number",
+          "meta": "@sys.number"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "Shawarmas",
+          "userDefined": true,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": " to my order",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "fb7fb07f-039f-49be-86f8-2b6b9fdf1c2e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I'd like to order ",
+          "userDefined": false
+        },
+        {
+          "text": "two",
+          "userDefined": false,
+          "alias": "number",
+          "meta": "@sys.number"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "shawarmas",
+          "userDefined": true,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": ", ",
+          "userDefined": false
+        },
+        {
+          "text": "1",
+          "userDefined": true,
+          "alias": "number",
+          "meta": "@sys.number"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "moussaka",
+          "userDefined": true,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": ", and ",
+          "userDefined": false
+        },
+        {
+          "text": "one",
+          "userDefined": false,
+          "alias": "number",
+          "meta": "@sys.number"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "hummus with pita",
+          "userDefined": true,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": ", please.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e1be09c7-8833-409b-bdb2-dfd752ac8e69",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Give me ",
+          "userDefined": false
+        },
+        {
+          "text": "2",
+          "userDefined": true,
+          "alias": "number",
+          "meta": "@sys.number"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "shawarmas",
+          "userDefined": true,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": ", ",
+          "userDefined": false
+        },
+        {
+          "text": "one",
+          "userDefined": false,
+          "alias": "number",
+          "meta": "@sys.number"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "falafel",
+          "userDefined": true,
+          "alias": "food-item",
+          "meta": "@food-item"
+        }
+      ],
+      "count": 0,
+      "id": "e86789b2-e26e-4ca3-a65d-083dca828011",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

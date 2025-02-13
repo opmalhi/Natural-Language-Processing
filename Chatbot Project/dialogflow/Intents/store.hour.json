@@ -1,0 +1,173 @@
+{
+  "id": "76c2df71-b2e2-4137-8d97-06bda5c654c0",
+  "name": "store.hour",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Here are our store hours,\n\nMon - Fri from 10 am to 11pm,\nSat - Sun from 11 am to 12 pm"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Are you open for dinner?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "74d45085-d8a2-4828-bf52-7b860426862f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Do you open early in the morning?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "448d3405-865f-4373-a606-42526dc3d7df",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "How late are you open?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "605eb64b-9021-49c6-a12b-618aabecdd38",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Do you have special hours on weekends?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "87bd03bb-f4cd-463b-9589-5447334fc53d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Are you open on Sundays?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "37fd9c97-8f15-4831-be3d-0b403024e075",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What are your hours today?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "abbf08d2-68e6-4025-b9f4-599a1b559af9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Are you open right now?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e7391d7e-c629-4185-8cea-f7f26d8559dc",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What time does your restaurant open?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "4871192f-5b8a-404d-af3c-7026644127f3",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "When do you open and close?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b3f3421d-d69c-4a00-85b8-ccd787a62fa4",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What are your store hours?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "2e874744-9f99-49bc-a674-554190c548d2",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "store hours",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "6e534c0f-bd98-4b11-af39-bb195b96000a",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

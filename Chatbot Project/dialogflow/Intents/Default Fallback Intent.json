@@ -1,0 +1,40 @@
+{
+  "id": "371281de-3b00-4a8b-b55c-eb0ef51e2b75",
+  "name": "Default Fallback Intent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": true,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "input.unknown",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "I'm sorry, I didn’t catch that. You can say 'New Order' or 'Track Order'. For a new order, please choose only from our available menu: Falafel, Hummus with Pita, Shawarma, Tabbouleh, Moussaka, Baklava, Greek Salad, Baba Ganoush, and Kebabs. Also, please specify the quantity for each item. For example: 'One Shawarma and two Baklavas'."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

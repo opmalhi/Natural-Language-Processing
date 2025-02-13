@@ -1,0 +1,139 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "food-item",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "Falafel",
+      "synonyms": [
+        "Falafel",
+        "falafel",
+        "Middle Eastern veggie patties",
+        "Crispy veggie balls",
+        "Spiced chickpea balls",
+        "Chickpea fritters"
+      ]
+    },
+    {
+      "value": "Hummus with Pita",
+      "synonyms": [
+        "Hummus with Pita",
+        "hummus with pita",
+        "Hummus and Pita",
+        "hummus and pita",
+        "pita with hummus",
+        "Pita with Hummus",
+        "pita and humms",
+        "Pita and Hummus",
+        "Chickpea spread with pita",
+        "Hummus served with pita",
+        "Creamy hummus and pita",
+        "Pita with hummus",
+        "Chickpea dip with pita bread"
+      ]
+    },
+    {
+      "value": "Shawarma",
+      "synonyms": [
+        "Shawarma",
+        "shawarma",
+        "Grilled kebab wrap",
+        "Shawarma wrap",
+        "Middle Eastern wrap",
+        "Spiced meat roll",
+        "Grilled meat wrap"
+      ]
+    },
+    {
+      "value": "Tabbouleh",
+      "synonyms": [
+        "Tabbouleh",
+        "tabbouleh",
+        "Parsley bulgur salad",
+        "Mediterranean tabbouleh",
+        "Fresh herb salad",
+        "Bulgur wheat salad",
+        "Parsley salad"
+      ]
+    },
+    {
+      "value": "Moussaka",
+      "synonyms": [
+        "Moussaka",
+        "moussaka",
+        "Greek Moussaka",
+        "Eggplant and meat casserole",
+        "Greek baked eggplant",
+        "Mediterranean eggplant dish",
+        "Eggplant casserole"
+      ]
+    },
+    {
+      "value": "Baklava",
+      "synonyms": [
+        "Baklava",
+        "baklava",
+        "Sweet baklava rolls",
+        "Layered nut pastry",
+        "Phyllo dough dessert",
+        "Honeyed pastry",
+        "Sweet pastry"
+      ]
+    },
+    {
+      "value": "Greek Salad",
+      "synonyms": [
+        "Greek Salad",
+        "greek salad",
+        "salad greek",
+        "Salad Greek",
+        "Feta and olive salad",
+        "Greek veggie salad",
+        "Tomato and cucumber salad",
+        "Horiatiki (Greek village salad)",
+        "Mediterranean salad"
+      ]
+    },
+    {
+      "value": "Baba Ganoush",
+      "synonyms": [
+        "Baba Ganoush",
+        "baba ganoush",
+        "Ganoush Baba",
+        "ganoush baba",
+        "Baba ganoush",
+        "Baba ghanoush",
+        "baba ghanouj",
+        "Baba Ghanouj",
+        "Baba ghanouj",
+        "baba Ghanouj",
+        "Spicy eggplant dip",
+        "Mediterranean eggplant spread",
+        "Grilled eggplant dip",
+        "Smoky eggplant spread",
+        "Eggplant dip"
+      ]
+    },
+    {
+      "value": "Kebabs",
+      "synonyms": [
+        "Kebabs",
+        "kebabs",
+        "Kebab",
+        "kabab",
+        "Kabab",
+        "Kabob",
+        "kabob",
+        "Kebab skewers",
+        "Skewered meat",
+        "Grilled meat on sticks",
+        "Spiced meat skewers",
+        "Grilled skewers"
+      ]
+    }
+  ],
+  "id": "0287e0cf-ad9d-4287-a14c-1539cedd83de",
+  "isOverridable": false
+}

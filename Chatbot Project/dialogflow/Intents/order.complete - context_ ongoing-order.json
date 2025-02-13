@@ -1,0 +1,278 @@
+{
+  "id": "9866dff5-9ecd-4e96-b96c-22ad5b913dfb",
+  "name": "order.complete - context: ongoing-order",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "ongoing-order"
+  ],
+  "contexts": [
+    "ongoing-order"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Got it! Your order # 4521 has been placed successfully.",
+            "Thanks! Your order # 2782 is confirmed.",
+            "Alright! Your order # 25 is now being processed.",
+            "Great choice! Your order # 50 is all set. We'll notify you when it's ready!",
+            "Awesome! Your order # 256 is confirmed. Get ready for some delicious food!",
+            "Thank you! We've received your order # 25452 and will prepare it shortly."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "That's all I need, thanks!",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e949c51f-1bc7-4a90-aaf8-c984b19f4056",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "That's all I'd like to get.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "926888bb-3c00-4ebb-a4b3-b5bd1bd7095f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "This is my final order.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "47928902-d5db-4b70-9dd7-2da7fdf9ceae",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I'm ready to check out.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "4f7f2c53-f797-45f6-a167-165c376a0561",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "That should do it.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "c5aa833c-1fe1-4c6c-807f-faa88f52e3d1",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Nothing else, I'm finished.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "4d832769-d73d-482d-9249-a7ba9ca69895",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I'm good with this order.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "9de74230-3307-45c7-8997-ead058ad5dde",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "That's all for my order.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "33e5f23e-2b68-4c30-890c-8807b6ee7aab",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "No more items, that's all.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "c90899ba-918c-4e11-b7cf-7262219be92f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I'm all set, thanks!",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b095ed6c-f5d8-4ab0-8fc2-6f2a043c3247",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "That's everything I need.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "242d90ea-97ae-4182-9616-5d45ad25e4ed",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "That will be all for now.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "a932cf74-7fe4-4284-b8e2-314a528c1ecb",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I'm done with my order.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "c8d85ad1-cf28-4a43-a1c2-b5e68871d71f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "That's it",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "412e2cab-b579-4488-b630-c676418f99b1",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Done",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "79324f31-2c80-4e13-a3b6-5aecbb296ed3",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Place an order",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f59a7f66-f4d1-4e1d-a7ab-678a59212a8b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Done ordering it",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "719ef723-0526-4646-afb3-b5fdc8b37fc0",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "That's all I needed",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d54d9717-91c2-46db-af05-dbb132388814",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Nope",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "5f687e6f-05f3-4235-a277-aac809a47b19",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

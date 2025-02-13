@@ -1,0 +1,183 @@
+{
+  "id": "deab6e8b-01bf-49ad-b5c6-be42f2bd6a43",
+  "name": "new.order",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "ongoing-order",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Got it! I’m here to take your order. Just let me know what you’d like, for example, 'Two Falafels and one Greek Salad.' Please include a quantity for each item. Our menu includes: Falafel, Hummus with Pita, Shawarma, Tabbouleh, Moussaka, Baklava, Greek Salad, Baba Ganoush, and Kebabs.",
+            "Alright! Let's start your order. Just say something like, 'Give me two Falafels and one Greek Salad.' Don't forget to mention a quantity for each item. Our menu includes: Falafel, Hummus with Pita, Shawarma, Tabbouleh, Moussaka, Baklava, Greek Salad, Baba Ganoush, and Kebabs.",
+            "Let’s begin your order! Simply say, 'I want two Kebabs and one Baba Ganoush.' Remember to specify a quantity for each item. You can choose from our menu: Falafel, Hummus with Pita, Shawarma, Tabbouleh, Moussaka, Baklava, Greek Salad, Baba Ganoush, and Kebabs.",
+            "Thank you! I’m ready to take your order. Please say something like, 'I’d like two Shawarmas and one Moussaka,' making sure to specify a quantity for each item. Here’s our menu: Falafel, Hummus with Pita, Shawarma, Tabbouleh, Moussaka, Baklava, Greek Salad, Baba Ganoush, and Kebabs.",
+            "Great! Let’s get your order started. Tell me something like, 'Two Falafels and a Greek Salad.' Be sure to include quantities. Our menu offers: Falafel, Hummus with Pita, Shawarma, Tabbouleh, Moussaka, Baklava, Greek Salad, Baba Ganoush, and Kebabs.",
+            "Alright! Your new order is starting. Just say something like, 'I’ll have two Shawarmas and one Baklava.' Please include a quantity for each item. Our menu features: Falafel, Hummus with Pita, Shawarma, Tabbouleh, Moussaka, Baklava, Greek Salad, Baba Ganoush, and Kebabs."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Can you help me order some food?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "4a343c1b-1a8e-4e98-9d25-32fe61bbdde9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I'd like to order from your restaurant",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "0870263b-e10e-47bc-9f8a-44d4af80456a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What can I order?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "6cb60f36-33f5-4104-936e-cebac347b510",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Show me the menu, I want to place an order",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "4aac3b27-666f-4c67-8a64-370659cef015",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I'm craving Mediterranean food, can I order now?",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "1e9a848e-4d41-4809-a1dd-a69f174429ff",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I'm hungry, I want to order",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "2bab11bb-46b3-4a91-ad95-3266e66a1ffa",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Place an order for me",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "a8304976-b29f-44f5-90e3-e4a45fcffa07",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Can I order something?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "aa0a634a-01bc-44e9-82ef-75d7aeb98725",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I want to place a new order",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b78337f4-6a25-40ba-933e-4402fae3b706",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "place a new order",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "25e795fe-f40f-48df-9938-37a8af451ebd",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "new order",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b6da801d-8472-40fd-97f3-d9f8f3abd850",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

@@ -1,0 +1,412 @@
+{
+  "id": "9bbb5b90-5f07-4518-b4c8-2cf2ada32ccb",
+  "name": "order.remove - context: ongoing-order",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "ongoing-order"
+  ],
+  "contexts": [
+    "ongoing-order"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "ongoing-order",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "food-item",
+          "dataType": "@food-item",
+          "isList": true,
+          "required": false,
+          "prompts": [],
+          "value": "$food-item",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I'd like to remove the ",
+          "userDefined": false
+        },
+        {
+          "text": "kebabs",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": " from my order",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "d07e7f9c-1e88-428f-b838-72e6e20210f4",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Get rid of the ",
+          "userDefined": false
+        },
+        {
+          "text": "hummus with pita",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": " from my order.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "abf8a864-55ba-4171-886d-8c35c78d2f70",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Please remove ",
+          "userDefined": false
+        },
+        {
+          "text": "tabbouleh",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": " and ",
+          "userDefined": false
+        },
+        {
+          "text": "moussaka",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": " from the list",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "8a836f5f-f6ac-47de-8ff3-a622629fc975",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "No ",
+          "userDefined": false
+        },
+        {
+          "text": "shawarma",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": ", just the ",
+          "userDefined": false
+        },
+        {
+          "text": "kebabs",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": ", please.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ee6cc9f5-8522-4236-8310-ec18c135098f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I need to remove ",
+          "userDefined": false
+        },
+        {
+          "text": "falafel",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": " and hummus.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "8a274d51-f076-4be3-8a58-45f4040c5f41",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Take the ",
+          "userDefined": false
+        },
+        {
+          "text": "kebabs",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": " off my order",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "823683c9-05b2-4587-ae77-cb3bbc60099a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Please remove the ",
+          "userDefined": false
+        },
+        {
+          "text": "baba ganoush",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": ".",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ebd330ca-5c10-4287-a95a-23704e66916d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Cancel my ",
+          "userDefined": false
+        },
+        {
+          "text": "Greek salad",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": ".",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "2072adc5-e2df-470c-98fb-e3daeba04a0b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I don't want the ",
+          "userDefined": false
+        },
+        {
+          "text": "baklava",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": " anymore.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "4d54cd91-0c2a-4d7e-b12b-35762d3b7359",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Forget the ",
+          "userDefined": false
+        },
+        {
+          "text": "moussaka",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": " in my order.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "edb18b15-ffdf-4eb1-84d6-7f6665e4d4f4",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Cancel the ",
+          "userDefined": false
+        },
+        {
+          "text": "moussaka",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": ", I'll take the ",
+          "userDefined": false
+        },
+        {
+          "text": "kebabs",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        }
+      ],
+      "count": 0,
+      "id": "b5693198-64bc-4748-8dc9-4c8a4caa2904",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Can you remove the ",
+          "userDefined": false
+        },
+        {
+          "text": "tabbouleh",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": " from my order?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b090c15a-103e-48b5-95d7-aa9c1e5eb7fe",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Take off the ",
+          "userDefined": false
+        },
+        {
+          "text": "shawarma",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": " from my order.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "6d9f485b-2970-4e4e-abc3-9e92452acffb",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I want to cancel the ",
+          "userDefined": false
+        },
+        {
+          "text": "hummus with pita",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": ".",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "bd6da1d2-dd79-4f7f-83c9-4b8faf4183f8",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Remove the ",
+          "userDefined": false
+        },
+        {
+          "text": "falafel",
+          "userDefined": false,
+          "alias": "food-item",
+          "meta": "@food-item"
+        },
+        {
+          "text": " from my order",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "5a1911be-6ef6-4566-9824-3050c5f23d3d",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

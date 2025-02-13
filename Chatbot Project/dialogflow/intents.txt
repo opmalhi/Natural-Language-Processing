@@ -1,0 +1,245 @@
+======================================================
+1- Intent = Default Welcome Intent
+======================================================
+Training Phrases:
+	- Just going to say hi
+	- Hey
+	- Hello
+	- hey there
+	- greetings
+	- howdy
+
+Text response:  
+	- Hey there! How can I assist you today? Just say "New Order", "Track Order" or "Store Hours" to get started!
+	- Hello! How may I assist you? You can choose from "New Order", "Track Order" or "Store Hours" to proceed.
+	- Hi! Need help? Say "New Order", "Track Order" or "Store Hours" to continue.
+	- Welcome! Ready to order? Just type "New Order" to place one or "Track Order" to check your delivery to check store open hours or "Store Hours".
+	- Hi there! I'm here to help. Would you like to place a "New Order", "Track Order" or "Store Hours" today?
+
+=========================================================			
+2- Intent = Default Fallback Intent
+=========================================================
+Text Response: 
+	- I'm sorry, I didn’t catch that. You can say 'New Order' or 'Track Order'. For a new order, please choose only from our available menu: Falafel, Hummus with Pita, Shawarma, Tabbouleh, Moussaka, Baklava, Greek Salad, Baba Ganoush, and Kebabs. Also, please specify the quantity for each item. For example: 'One Shawarma and two Baklavas'.
+
+=================================================================
+Intent = new.order
+=================================================================
+Contexts:
+	- Add output context = ongoing-order
+
+Training Phrases:
+	- Can you help me order some food?
+	- I'd like to order from your restaurant
+	- What can I order?
+	- Show me the menu, I want to place an order
+	- I'm craving Mediterranean food, can I order now?
+	- I'm hungry, I want to order
+	- Place an order for me
+	- Can I order something?
+	- I want to place a new order
+	- place a new order
+	- new order
+
+Text Response: 
+	- Got it! I’m here to take your order. Just let me know what you’d like, for example, 'Two Falafels and one Greek Salad.' Please include a quantity for each item. Our menu includes: Falafel, Hummus with Pita, Shawarma, Tabbouleh, Moussaka, Baklava, Greek Salad, Baba Ganoush, and Kebabs.
+	
+	- Alright! Let's start your order. Just say something like, 'Give me two Falafels and one Greek Salad.' Don't forget to mention a quantity for each item. Our menu includes: Falafel, Hummus with Pita, Shawarma, Tabbouleh, Moussaka, Baklava, Greek Salad, Baba Ganoush, and Kebabs.
+
+	- Let’s begin your order! Simply say, 'I want two Kebabs and one Baba Ganoush.' Remember to specify a quantity for each item. You can choose from our menu: Falafel, Hummus with Pita, Shawarma, Tabbouleh, Moussaka, Baklava, Greek Salad, Baba Ganoush, and Kebabs.
+
+	- Thank you! I’m ready to take your order. Please say something like, 'I’d like two Shawarmas and one Moussaka,' making sure to specify a quantity for each item. Here’s our menu: Falafel, Hummus with Pita, Shawarma, Tabbouleh, Moussaka, Baklava, Greek Salad, Baba Ganoush, and Kebabs.
+
+	- Great! Let’s get your order started. Tell me something like, 'Two Falafels and a Greek Salad.' Be sure to include quantities. Our menu offers: Falafel, Hummus with Pita, Shawarma, Tabbouleh, Moussaka, Baklava, Greek Salad, Baba Ganoush, and Kebabs.
+
+	- Alright! Your new order is starting. Just say something like, 'I’ll have two Shawarmas and one Baklava.' Please include a quantity for each item. Our menu features: Falafel, Hummus with Pita, Shawarma, Tabbouleh, Moussaka, Baklava, Greek Salad, Baba Ganoush, and Kebabs.
+
+Fulfillment:
+	Enable webhook call for this intent
+	
+====================================================================
+3- Intent = order.add - context: ongoing-order
+====================================================================
+Contexts:
+	- Add input Context = ongoing-order
+	- Add output Context = ongoing-order
+
+Training Phrases:
+	- Can I add another Hummus with Pita to my order?
+	- Please add an extra Kebab for me
+	- Don't forget to add one more Baklava
+	- I want to add a side of Tabbouleh
+	- Can you add a Moussaka to my order?
+	- I'd like to throw in one more Greek Salad
+	- I think I forgot to add a Shawarma!
+	- Can you add a Baklava to my order, please?
+	- Make that two Kebabs instead of one
+	- Add one Tabbouleh to the order, please
+	- Please add two Baba Ganoush and one Pita with Hummus
+	- I want to add a Falafel
+	- Add two Shawarmas to my order
+
+Text Response:
+	- Would you like to add anything else?
+	- Is there anything else I can get for you?
+	- Do you need anything else before I finalize your order?
+	- Are you all set, or do you want to add more items?
+	- Would you like to make any changes or add anything else?
+	- Can I help you with anything else before we proceed?
+	- Please let me know if you'd like to add anything else.
+	- Should I go ahead and place the order now?
+	- Everything looks great! Would you like to include anything else?
+
+Fulfillment:
+	Enable webhook call for this intent
+
+========================================================================
+4- Intent = order.complete - context: ongoing-order
+========================================================================
+Contexts:
+	- Add input context = ongoing-order
+
+Training phrases:
+	- That's all I need, thanks!
+	- That's all I'd like to get.
+	- This is my final order.
+	- I'm ready to check out.
+	- I'm good with this order.
+	- That should do it.
+	- No more items, that's all.
+	- Nothing else, I'm finished.
+	- Nope
+	- Done
+	- That's it
+	- place an order
+
+Text Response:
+	- Got it! Your order # 4521 has been placed successfully.
+	- Thanks! Your order # 2782 is confirmed.
+	- Alright! Your order # 25 is now being processed.
+	- Great choice! Your order # 50 is all set. We'll notify you when it's ready!
+	- Awesome! Your order # 256 is confirmed. Get ready for some delicious food!
+	- Thank you! We've received your order # 25452 and will prepare it shortly. 
+
+Fulfillment:
+	Enable webhook call for this intent
+
+
+==========================================================
+5- Intent = order.remove - context: ongoing-order
+==========================================================
+Contexts:
+	- Add input context = ongoing-order
+	- add ouput context = ongoing-order
+
+Training Phrases:
+	- I'd like to remove the kebabs from my order
+	- Get rid of the hummus with pita from my order.
+	- Please remove tabbouleh and moussaka from the list
+	- No shawarma, just the kebabs, please.
+	- I need to remove falafel and hummus.
+	- Take the kebabs off my order
+	- Please remove the baba ganoush.
+	- Cancel my Greek salad.
+	- I don't want the baklava anymore.
+	- Forget the moussaka in my order.
+	- Remove the falafel from my order
+	- I want to cancel the hummus with pita.
+	- Can you remove the tabbouleh from my order?
+
+Fulfillment:
+	Enable webhook call for this intent
+
+=====================================================
+6- Intent= track.order
+=====================================================
+
+check the status of my order
+track order
+track existing order
+
+Text response:
+	Definitely. What is your order id?
+	Sure. Please enter your order id.
+	Definitely. What is your order id?
+
+=======================================================
+7- Intent = store.hour
+=======================================================
+Training Phrases:
+	- Are you open for dinner?
+	- Do you open early in the morning?
+	- How late are you open?
+	- Do you have special hours on weekends?
+	- What are your hours today?
+	- Are you open right now?
+	- What time does your restaurant open?
+	- When do you open and close?
+	- What are your store hours?
+	- Store hours
+
+Text Response:
+	- Here are our store hours, Mon - Fri from 10 am to 11pm, Sat - Sun from 11 am to 12 pm
+
+==============================================================
+8- Intent = track.order 
+==============================================================
+Contexts:
+	- add output context = ongoing-tracking
+
+Training Phrases:
+	- Any updates on my order?
+	- What's the estimated delivery time?
+	- Is my order still being prepared?
+	- Has my order been dispatched?
+	- How long will my order take?
+	- Is my order on the way?
+	- Can you tell me when my food will arrive?
+	- What's the status of my order?
+	- I want to track my delivery
+	- Can you check my order status?
+	- track order
+	- track existing order
+	- check the status of my order
+	- track my order
+	- where is my order?
+
+Text Response:
+	- Could you please provide your order number or tracking ID so I can check the status?
+	- I’ll need your tracking ID to check the status of your order. Can you share that with me?
+	- Please give me your order number or tracking ID, and I’ll find the details for you!
+	- To track your order, please provide your tracking ID or order number.
+	- Can you kindly provide your order reference or tracking ID so I can assist you further?
+	- Please enter the tracking ID or order number so I can check the status for you.
+	- I can track your order! Please send me your tracking ID or order number.
+	- Just give me your tracking ID, and I’ll find your order status in no time!
+	- To proceed, please provide the order number or tracking ID you’d like to track.
+	- Please tell me your tracking ID or order number so I can find your order status.
+	- Share your tracking ID or order number, and I’ll get the latest details for you!
+
+=================================================================
+9- Intent= track.order - context: ongoing-tracking
+=================================================================
+Contexts:
+	- Add input context: ongoing-tracking
+	- Add output context: ongoing-tracking
+
+Training Phrases:
+	- Check order 667788 for me.
+	- Tracking ID 334455.
+	- The order number is 67890.
+	- Order id 54321.
+	- It's 98765.
+	- My order id is 12345.
+	- 345
+	- 7890
+	- here is my order id # 341
+	- id is 453
+	- here you go: 123
+	- here is my order number 675
+	- here it is - 63321
+	- how about 40?
+	- how about 32
+
+Fulfillment:
+	Enable webhook call for this intent

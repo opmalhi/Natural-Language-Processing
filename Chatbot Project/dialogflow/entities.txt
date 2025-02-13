@@ -1,0 +1,21 @@
+entity = @food-item
+===================
+- Check Define synonyms
+
+- Falalfel -> Falafel, falafel
+
+- Hummus with Pita -> Hummus with Pita, hummus with pita, pita with hummus, Pita with Hummus
+
+- Shawarma -> Shawarma, shawarma
+
+- Tabbouleh -> Tabbouleh, tabbouleh, Fresh herb salad, Parsley salad
+
+- Moussaka -> Moussaka, moussaka, Greek Moussaka, greek moussaka, Eggplant and meat casserole, Eggplant casserole
+
+- Baklava -> baklava, Baklava, Sweet baklava rolls, Sweet pastry
+
+- Greek Salad -> greek salad, greek Salad, Greek Salad, Greek salad, Greek veggie salad, Feta and olive salad
+
+- Baba Ganoush -> Baba Ganoush, baba Ganoush, Baba ganoush, Baba Ghanoush, baba ghanoush, Baba ghanoush
+
+- Kebabs -> Kebabs, kebabs, kebab, kabab, Kabab, Kebab, kabob, Kabob, Grilled meat on sticks

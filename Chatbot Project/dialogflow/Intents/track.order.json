@@ -1,0 +1,236 @@
+{
+  "id": "947cb3de-3684-4a9e-b194-d7746255edef",
+  "name": "track.order",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "ongoing-tracking",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Could you please provide your order number or tracking ID so I can check the status?",
+            "I’ll need your tracking ID to check the status of your order. Can you share that with me?",
+            "Please give me your order number or tracking ID, and I’ll find the details for you!",
+            "To track your order, please provide your tracking ID or order number.",
+            "Can you kindly provide your order reference or tracking ID so I can assist you further?",
+            "Please enter the tracking ID or order number so I can check the status for you.",
+            "I can track your order! Please send me your tracking ID or order number.",
+            "Just give me your tracking ID, and I’ll find your order status in no time!",
+            "To proceed, please provide the order number or tracking ID you’d like to track.",
+            "Please tell me your tracking ID or order number so I can find your order status.",
+            "Share your tracking ID or order number, and I’ll get the latest details for you!"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Any updates on my order?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ebb49914-6598-4bbd-9d08-0cc6d75f6815",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What's the estimated delivery time?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "82283b52-c494-461c-beb2-ea31ef9bc595",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Is my order still being prepared?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "37c76832-95b0-44c0-b233-6bf1bc370957",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Has my order been dispatched?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e80a426e-2eda-4a3d-bfa4-1e5629829501",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "How long will my order take?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "1ea4d366-3d7d-437c-975c-32f70f9c3f39",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Is my order on the way?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "775aebc3-5e0e-48d9-a485-0c0c75b65c94",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Can you tell me when my food will arrive?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ffcee5b0-8914-40fa-8cf2-2c1bf9f5d6ad",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What's the status of my order?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "40c8235d-21a5-4545-97c7-0715d3401157",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I want to track my delivery",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "04e8167c-2f33-460b-86de-1d92652f3e6b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Can you check my order status?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "3474484a-5d65-4425-9f3d-cff220ada734",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "where is my order?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "5dff0378-f1a2-4038-b9f1-1d7ee052e95b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "track my order",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "c632afc3-45f8-470c-bdf3-fd2c6aab3780",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "check the status of my order",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "1a8bdf21-af47-46a9-9418-ace2b00f9dd8",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "track existing order",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "1f61753a-56b8-421b-a521-b9007ba5b355",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "track order",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "a7ebedc6-28ab-4979-9333-b7dfcaaea606",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}
